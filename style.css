@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 3rem 1.5rem;
+  font-family: "Fraunces", Georgia, serif;
+  background-image:url(./img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+.header-title {
+    height: 200px;
+}
+.header-title h1 {
+    color: azure;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header-title p {
+    color: azure;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main_container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.center-xy {
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.25rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 5rem;
+}
+
+.cards {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  
+  
+}
+.cards[data-planet="saturno"] {
+  background-image: url(./img/saturno.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    
+}
+
+.cards[data-planet="marte"] {
+  background-image: url(./img/marte.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cards[data-planet="mercurio"] {
+    background-image: url(./img/mercurio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+.cards[data-planet="jupiter"] {
+  background-image: url(./img/jupiter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cards[data-planet="venus"] {
+  background-image: url(./img/venus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cards[data-planet="urano"] {
+  background-image: url(./img/urano.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cards:hover{
+  cursor: pointer;
+}
+.cards-title  {
+  position: absolute;
+  width: 200px;
+  margin-top: 15px;
+  margin-left: 120px;
+  font-size: 30px;
+  color: #fff;
+}
